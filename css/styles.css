@@ -43,8 +43,90 @@ fieldset, img {
   border: 0; }
 
 .wrapper {
-  width: 100%;
-  max-width: 1200px;
+  width: 100rem;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: #faf9f9;
+  box-shadow: var(--shadow-dark);
+  min-height: 50rem; }
+  .container ul li {
+    display: flex; }
+
+.header {
+  font-size: 1.4rem;
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media only screen and (max-width: 31.25em) {
+    .header {
+      font-size: 50%; } }
+
+.cta {
+  padding: 3.5rem 0;
+  text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .cta {
+      padding: 2.5rem 0; } }
+  .cta__book-now {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase; }
+
+.btn {
+  font-size: 1.5rem;
+  border: none;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 100px;
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; }
+  .btn > * {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    transition: all .2s; }
+  .btn__visible {
+    padding: 2rem 7.5rem; }
+  .btn__invisible {
+    display: inline-block;
+    position: absolute;
+    padding: 2rem 0;
+    left: 0;
+    top: -100%; }
+  .btn:hover {
+    background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark)); }
+  .btn:hover .btn__visible {
+    transform: translateY(100%); }
+  .btn:hover .btn__invisible {
+    top: 0; }
+  .btn:focus {
+    outline: none;
+    animation: pulsate 1s infinite; }
+
+header .lead-banner img {
+  width: 100%; }
+
+.main-nav {
+  padding: 15px 30px; }
+  .main-nav ul li {
+    list-style: none;
+    float: left;
+    padding: 10px; }
+    .main-nav ul li a {
+      font-size: 2rem;
+      text-decoration: none; }
+
+.lessons-banner img {
+  width: 100%; }
