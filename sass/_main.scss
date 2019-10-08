@@ -107,6 +107,9 @@ header{
         font-size: 2rem;
         a{
             color: $color-grey-light-4;
+            &:hover{
+                color: $color-success;
+            }
         }
     }
 }

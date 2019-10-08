@@ -203,3 +203,5 @@ header .lead-banner .banner-content {
     font-size: 2rem; }
     .footer p a {
       color: #ccc; }
+      .footer p a:hover {
+        color: #32af13; }
