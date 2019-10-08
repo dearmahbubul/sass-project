@@ -49,19 +49,17 @@ fieldset, img {
   box-sizing: border-box; }
 
 .container {
-  max-width: 120rem;
+  width: 120rem;
   margin: 8rem auto;
   background-color: #faf9f9;
-  box-shadow: var(--shadow-dark);
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   min-height: 50rem; }
-  .container ul li {
-    display: flex; }
 
 .header {
   font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--border);
+  border-bottom: 2px solid #f8f9fb;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -81,39 +79,54 @@ fieldset, img {
     margin-bottom: 2.5rem;
     text-transform: uppercase; }
 
-.btn {
+.button-basic, .btn-danger, .btn-submit, .btn {
   font-size: 1.5rem;
   border: none;
   font-weight: 300;
   text-transform: uppercase;
   border-radius: 100px;
-  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  background-image: linear-gradient(to right, #1a3bd1, #07165c);
   color: #fff;
   position: relative;
   overflow: hidden;
-  cursor: pointer; }
-  .btn > * {
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    transition: all .2s; }
-  .btn__visible {
-    padding: 2rem 7.5rem; }
-  .btn__invisible {
-    display: inline-block;
-    position: absolute;
-    padding: 2rem 0;
-    left: 0;
-    top: -100%; }
-  .btn:hover {
-    background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark)); }
-  .btn:hover .btn__visible {
-    transform: translateY(100%); }
-  .btn:hover .btn__invisible {
-    top: 0; }
-  .btn:focus {
-    outline: none;
-    animation: pulsate 1s infinite; }
+  cursor: pointer;
+  padding: 10px 20px; }
+
+.btn-danger {
+  background-color: #ba2650; }
+
+.btn-submit {
+  background-color: #32af13;
+  color: white; }
+
+.btn > * {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  transition: all .2s; }
+
+.btn__visible {
+  padding: 2rem 7.5rem; }
+
+.btn__invisible {
+  display: inline-block;
+  position: absolute;
+  padding: 2rem 0;
+  left: 0;
+  top: -100%; }
+
+.btn:hover {
+  background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark)); }
+
+.btn:hover .btn__visible {
+  transform: translateY(100%); }
+
+.btn:hover .btn__invisible {
+  top: 0; }
+
+.btn:focus {
+  outline: none;
+  animation: pulsate 1s infinite; }
 
 header .lead-banner img {
   width: 100%; }
@@ -127,6 +140,28 @@ header .lead-banner img {
     .main-nav ul li a {
       font-size: 2rem;
       text-decoration: none; }
+
+.lessons ul li {
+  font-size: 3rem; }
+
+.services h1 {
+  text-align: center;
+  font-size: 3rem; }
+
+.services ul li {
+  display: flex;
+  float: left;
+  padding: 10px 15px; }
+
+.projects {
+  padding: 10px 45px; }
+  .projects h1 {
+    text-align: center;
+    font-size: 3rem; }
+  .projects ul li {
+    display: flex;
+    float: left;
+    padding: 10px 15px; }
 
 .lessons-banner img {
   width: 100%; }

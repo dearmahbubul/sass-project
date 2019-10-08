@@ -1,31 +1,21 @@
 .container {
-    max-width:120rem;
+    width:120rem;
     // Center the container
     margin:8rem auto;
     background-color:$color-grey-light-1;
-    box-shadow:var(--shadow-dark);
+    box-shadow:$shadow-dark;
     min-height: 50rem;
-
-    ul{
-    
-          li{
-
-    		display: flex;
-             }
-
-     }
     
     @media only screen and (max-width:$bp-largest) {
         
     }
 }
 
-
 .header {
     font-size:1.4rem;
     height: 7rem;
     background-color: #fff;
-    border-bottom: var(--border);
+    border-bottom: $border;
 
     display:flex;
     // Divide the content in 3

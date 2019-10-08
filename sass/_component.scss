@@ -15,18 +15,32 @@
         text-transform: uppercase;
     }
 }
-
-.btn {
+.button-basic  {
     font-size: 1.5rem;
     border:none;
     font-weight: 300;
     text-transform: uppercase;
     border-radius: 100px;
-    background-image: linear-gradient(to right,var(--color-primary-light),var(--color-primary-dark));
+    background-image: linear-gradient(to right,$color-primary,$color-primary-dark);
     color:#fff;
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    padding: 10px 20px;
+  }
+  
+  .btn-danger  {
+    @extend .button-basic;
+    background-color: $color-danger;
+  }
+  
+  .btn-submit  {
+    @extend .button-basic;
+    background-color: $color-success;
+    color: white;
+  }
+.btn {
+    @extend .button-basic;
 
     & > * {
         display: inline-block;

@@ -27,6 +27,38 @@ header{
     }
 }
 
+@mixin list-style {
+    h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+    ul{
+        li{
+            display: flex;
+            float: left;
+            padding: 10px 15px;
+        }
+    }
+}
+.lessons{
+    ul{
+        li{
+            font-size: 3rem;
+        }
+    }
+}
+.services{
+    @include list-style;
+    
+    
+   
+}
+.projects{
+    @include list-style;
+    padding: 10px 45px;
+   
+}
+
 .lessons-banner{
     img{
         width: $img_full_width;
