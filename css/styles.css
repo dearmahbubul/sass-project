@@ -26,7 +26,7 @@ html {
 
 body {
   font-family: 'Oxygen', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.6;
   color: #777;
   background-color: #f8f9fb;
@@ -35,6 +35,9 @@ body {
 
 li {
   list-style: none; }
+
+a {
+  text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6, p {
   margin-top: 0; }
@@ -53,7 +56,8 @@ fieldset, img {
   margin: 8rem auto;
   background-color: #faf9f9;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-  min-height: 50rem; }
+  min-height: 50rem;
+  box-sizing: border-box; }
 
 .header {
   font-size: 1.4rem;
@@ -129,7 +133,13 @@ fieldset, img {
   animation: pulsate 1s infinite; }
 
 header .lead-banner img {
-  width: 100%; }
+  width: 100%;
+  position: relative; }
+
+header .lead-banner .banner-content {
+  position: absolute;
+  top: 55px;
+  left: 300px; }
 
 .main-nav {
   padding: 15px 30px; }
@@ -141,27 +151,55 @@ header .lead-banner img {
       font-size: 2rem;
       text-decoration: none; }
 
-.lessons ul li {
-  font-size: 3rem; }
-
-.services h1 {
+.title {
   text-align: center;
-  font-size: 3rem; }
+  font-size: 3rem;
+  padding: 15px 0; }
 
-.services ul li {
-  display: flex;
-  float: left;
-  padding: 10px 15px; }
+.video {
+  padding: 10px 20px;
+  display: block; }
+
+.lessons ul li {
+  font-size: 3rem;
+  padding: 10px 30px; }
+
+.services ul {
+  margin-top: 80px;
+  text-align: center;
+  padding: 10px 100px; }
+  .services ul li {
+    display: flex;
+    float: left;
+    padding: 10px 15px; }
+    .services ul li a {
+      font-size: 2rem; }
 
 .projects {
   padding: 10px 45px; }
-  .projects h1 {
-    text-align: center;
-    font-size: 3rem; }
   .projects ul li {
     display: flex;
     float: left;
     padding: 10px 15px; }
 
 .lessons-banner img {
-  width: 100%; }
+  width: 100%;
+  position: absolute; }
+
+.lessons-banner .lesson-wrapper {
+  position: relative;
+  top: 15px;
+  box-shadow: 2px 2px 13px 13px #0f2830; }
+
+#projects {
+  position: relative;
+  bottom: 45px; }
+
+.footer {
+  padding: 10px 0px;
+  background-color: #333;
+  text-align: center; }
+  .footer p {
+    font-size: 2rem; }
+    .footer p a {
+      color: #ccc; }

@@ -5,6 +5,12 @@ header{
     .lead-banner{
         img{
             width: $img_full_width;
+            position: relative;
+        }
+        .banner-content{
+            position: absolute;
+            top: 55px;
+            left: 300px;
         }
     }
 }
@@ -27,11 +33,16 @@ header{
     }
 }
 
+.title{
+    text-align: center;
+    font-size: 3rem;
+    padding: 15px 0;
+}
+.video{
+    padding: 10px 20px;
+    display: block;
+}
 @mixin list-style {
-    h1{
-        text-align: center;
-        font-size: 3rem;
-    }
     ul{
         li{
             display: flex;
@@ -44,14 +55,24 @@ header{
     ul{
         li{
             font-size: 3rem;
+            padding: 10px 30px;
         }
     }
 }
 .services{
-    @include list-style;
-    
-    
-   
+    ul{
+        margin-top: 80px;
+        text-align: center;
+        padding: 10px 100px;
+        li{
+            display: flex;
+            float: left;
+            padding: 10px 15px;
+            a {
+                font-size: 2rem;
+            }
+        }
+    }
 }
 .projects{
     @include list-style;
@@ -62,5 +83,30 @@ header{
 .lessons-banner{
     img{
         width: $img_full_width;
+        position: absolute;
+    }
+    .lesson-wrapper{
+        position: relative;
+        top: 15px;
+        box-shadow: 2px 2px 13px 13px #0f2830;
+
+    }
+}
+#projects{
+    position: relative;
+    bottom: 45px;
+}
+
+.footer{
+    padding: 10px 0px;
+    background-color: $color-grey-dark-1;
+    text-align: center;
+
+    p{
+        
+        font-size: 2rem;
+        a{
+            color: $color-grey-light-4;
+        }
     }
 }
